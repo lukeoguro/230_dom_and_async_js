@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Fluid Layout Gallery</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="gallery.css" />
+  <script src="gallery.js"></script>
+</head>
+
+<body>
+  <main>
+    <h1>My Photo Gallery</h1>
+    <div class="figures">
+      <figure class="show">
+        <img src="http://via.placeholder.com/1200x900" alt="Photo 1" />
+        <figcaption>Example photo 1</figcaption>
+      </figure>
+      <figure class="hide">
+        <img src="http://via.placeholder.com/1200x900/fff/333" alt="Photo 2" />
+        <figcaption>Example photo 2</figcaption>
+      </figure>
+      <figure class="hide">
+        <img src="http://via.placeholder.com/1200x900/66cc33/f0f0f0" alt="Photo 3" />
+        <figcaption>Example photo 3</figcaption>
+      </figure>
+      <figure class="hide">
+        <img src="http://via.placeholder.com/1200x900/993535/aaa" alt="Photo 4" />
+        <figcaption>Example photo 4</figcaption>
+      </figure>
+    </div>
+    <ul class="thumbnails">
+      <li>
+        <a href="#" data-figure-id="0" class="active">
+          <img src="http://via.placeholder.com/1200x900" alt="Photo 1" />
+        </a>
+      </li>
+      <li>
+        <a href="#" data-figure-id="1">
+          <img src="http://via.placeholder.com/1200x900/fff/333" alt="Photo 2" />
+        </a>
+      </li>
+      <li>
+        <a href="#" data-figure-id="2">
+          <img src="http://via.placeholder.com/1200x900/66cc33/f0f0f0" alt="Photo 3" />
+        </a>
+      </li>
+      <li>
+        <a href="#" data-figure-id="3">
+          <img src="http://via.placeholder.com/1200x900/993535/aaa" alt="Photo 4" />
+        </a>
+      </li>
+    </ul>
+  </main>
+</body>
+
+</html>
