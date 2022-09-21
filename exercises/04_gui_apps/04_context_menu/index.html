@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Todos</title>
+  <link rel="stylesheet" href="./app.css">
+  <script src="./jquery.js"></script>
+  <script src="./handlebars.js"></script>
+  <script src="./app.js"></script>
+  <script id="todos-template" type="text/x-handlebars-template">
+    {{#each todos}}
+      <li data-id="{{id}}">{{title}}</li>
+    {{/each}}
+  </script>
+
+  <script id="context-menu-template" type="text/x-handlebars-template">
+    <ul>
+      <li>Edit Todo</li>
+      <li>Show Details</li>
+      <li data-id="{{id}}" class="remove">Delete</li>
+    </ul>
+  </script>
+
+  <script id="confirm-template" type="text/x-handlebars-template">
+    <div class="confirm-wrapper" data-id="{{id}}">
+      <p>Are you sure you want to delete this todo?</p>
+      <div class="actions">
+        <a href="#" class="confirm-yes">Yes</a>
+        <a href="#" class="confirm-no">No</a>
+      </div>
+    </div>
+  </script>
+</head>
+
+<body>
+  <h2>Todos</h2>
+  <ul id="todos"></ul>
+
+  <div class="overlay"></div>
+  <div class="confirm-prompt"></div>
+  <div class="context-menu"></div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Exotic Animals</title>
+  <link rel="stylesheet" href="./app.css">
+  <script src="./jquery.js"></script>
+  <script src="./handlebars.js"></script>
+  <script src="./app.js"></script>
+  <script id='figure-template' type='text/x-handlebars'>
+    <figure>
+      <img src="{{ src }}" alt="">
+      <figcaption>{{ description }}</figcaption>
+    </figure>
+  </script>
+</head>
+
+<body>
+  <h1>Exotic Animals</h1>
+  <div id="animal-figures">
+  </div>
+</body>
+
+</html>
