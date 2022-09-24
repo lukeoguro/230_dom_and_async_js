@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="./app.css">
+  <script src="./jquery.js"></script>
+  <script src="./handlebars.js"></script>
+  <script src="./app.js"></script>
+  <script id="question_template" type="text/x-handlebars-template">
+    <div class="question" data-id="{{id}}">
+      <p class="description">Q{{id}}. {{{description}}}</p>
+        {{#each options}}
+          <label>
+            <input name="{{../id}}" type="radio" value="{{.}}" />
+            {{.}}
+          </label>
+        {{/each}}
+      <p class="result"></p>
+    </div>
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h1>Multiple Choice Quiz</h1>
+    <form action="#" method="post" novalidate>
+      <p class="form_errors"></p>
+      <fieldset>
+      </fieldset>
+      <a class="submit">Submit Quiz</a>
+      <a class="reset_form disabled">Reset</a>
+    </form>
+  </div>
+</body>
+
+</html>
